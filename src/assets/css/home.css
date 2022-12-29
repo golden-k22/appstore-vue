@@ -1,0 +1,346 @@
+body {
+  color: #202020;
+  font-family: "Montserrat", "Helvetica", "Open Sans", "Arial";
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #1b2431;
+}
+
+.sidebar {
+  /* background-color: #1b2431; */
+  box-shadow: none;
+}
+
+.sidebar .nav-link {
+  border-left: 5px solid transparent;
+  color: #738297;
+  padding: .5rem .75rem;
+}
+
+.sidebar .nav-link:hover {
+  color: white;
+}
+
+.sidebar .nav-link.active {
+  border-left: 5px solid #738297;
+  color: white;
+}
+
+.sidebar .zmdi {
+  display: inline-block;
+  font-size: 1.35rem;
+  margin-right: 5px;
+  min-width: 25px;
+}
+
+.card-list {
+  width: 100%;
+}
+
+.card-list:before,
+.card-list:after {
+  content: " ";
+  display: table;
+}
+
+.card-list:after {
+  clear: both;
+}
+
+.card {
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.card .zmdi {
+  color: white;
+  font-size: 28px;
+  opacity: 0.3;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
+.card .stat {
+  padding-right: 5px;
+  text-align: right;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card .title {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 10px 0;
+  text-transform: uppercase;
+}
+
+.card .value {
+  font-size: 50px;
+  padding: 0 10px;
+}
+
+.card.blue {
+  background: linear-gradient(to right, rgb(130, 180, 250), rgb(130, 100, 250));
+}
+
+.card.green {
+  background: linear-gradient(to right, rgb(151, 224, 179), rgb(86, 180, 150));
+}
+
+.card.orange {
+  background: linear-gradient(to right, rgb(253, 195, 97), rgb(252, 163, 80));
+}
+
+.card.red {
+  background: linear-gradient(to right, rgb(244, 122, 122), rgb(228, 62, 62));
+}
+
+.card .icon {
+  position: absolute;
+  float: right;
+  right: -30px;
+  top: 20px;
+  font-size: 170px;
+  opacity: 0.2;
+
+}
+
+.projects {
+  background-color: #273142;
+  border: 1px solid #313D4F;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.projects-inner {
+  border-radius: 4px;
+}
+
+.projects-header {
+  color: white;
+  padding: 22px;
+}
+
+.projects-header .count,
+.projects-header .title {
+  display: inline-block;
+}
+
+.projects-header .count {
+  color: #738297;
+}
+
+.projects-header .zmdi {
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.projects-header .title {
+  font-size: 21px;
+}
+
+.projects-header .title+.count {
+  margin-left: 5px;
+}
+
+.projects-table {
+  background: #273142;
+  width: 100%;
+}
+
+.projects-table td,
+.projects-table th {
+  color: white;
+  padding: 10px 22px;
+  vertical-align: middle;
+}
+
+.projects-table td p {
+  font-size: 12px;
+}
+
+.projects-table td p:last-of-type {
+  color: #738297;
+  font-size: 11px;
+}
+
+.projects-table th {
+  background-color: #313D4F;
+}
+
+.projects-table tr:hover {
+  background-color: #303d52;
+}
+
+.projects-table tr:not(:last-of-type) {
+  border-bottom: 1px solid #313D4F;
+}
+
+.projects-table .member figure,
+.projects-table .member .member-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.projects-table .member figure+.member-info {
+  margin-left: 7px;
+}
+
+.projects-table .member img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+.projects-table .status>form {
+  float: right;
+}
+
+.projects-table .status-text {
+  display: inline-block;
+  font-size: 12px;
+  margin: 11px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.projects-table .status-text:before {
+  border: 3px solid;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 14px;
+}
+
+.projects-table .status-text.status-blue:before {
+  border-color: #1C93ED;
+}
+
+.projects-table .status-text.status-green:before {
+  border-color: #66B92E;
+}
+
+.projects-table .status-text.status-orange:before {
+  border-color: #DA932C;
+}
+
+.projects-table .status-text.status-red:before {
+  border-color: #D65B4A;
+}
+
+.selectric {
+  background-color: transparent;
+  border-color: #313D4F;
+  border-radius: 4px;
+}
+
+.selectric .label {
+  color: #738297;
+  line-height: 34px;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.selectric-wrapper {
+  float: right;
+  width: 150px;
+}
+
+.between-charts {
+  margin-top: 20px;
+}
+
+.chart {
+  border-radius: 3px;
+  /*  border: 1px solid #313D4F; */
+  background-color: white;
+
+  padding: 10px;
+  position: relative;
+
+  box-shadow: 3px 3px 12px #bbbbbb;
+}
+
+.chart canvas {
+  height: 200px;
+  width: 100%;
+}
+
+.chart .actions {
+  margin: 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.chart .actions span {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  padding: 4px;
+}
+
+.chart .actions .btn-link {
+  color: white;
+}
+
+.chart .actions .btn-link i {
+  font-size: 1.75rem;
+}
+
+.point {
+  color: rgb(83, 89, 177);
+  font-size: 10px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.chart .title {
+  font-size: 18px;
+
+}
+
+.chart .unit {
+  float: right;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+
+.chart .title+.tagline {
+  margin-top: 10px;
+}
+
+.chart .tagline {
+  font-size: 12px;
+}
+
+.danger-item {
+  border-left: 4px solid #A84D43;
+}
+
+.zmdi {
+  line-height: 1;
+  vertical-align: middle;
+}
